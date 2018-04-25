@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendStorage.UI", "FriendStorage.UI\FriendStorage.UI.csproj", "{D32D4E43-79CA-4FD3-B920-13957F9060E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendStorage.DataAccess", "FriendStorage.DataAccess\FriendStorage.DataAccess.csproj", "{ED3B0A8C-BCE2-427B-8DA8-AC7F1388DD2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendStorage.Model", "FriendStorage.Model\FriendStorage.Model.csproj", "{67EB7C6D-721A-4C84-991D-594BD263A0ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendStorage.UI.Tests", "FriendStorage.UI.Tests\FriendStorage.UI.Tests.csproj", "{688BFAD8-13A3-4C7B-8BA7-8CCEA1499F39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{67EB7C6D-721A-4C84-991D-594BD263A0ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67EB7C6D-721A-4C84-991D-594BD263A0ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67EB7C6D-721A-4C84-991D-594BD263A0ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{688BFAD8-13A3-4C7B-8BA7-8CCEA1499F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{688BFAD8-13A3-4C7B-8BA7-8CCEA1499F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{688BFAD8-13A3-4C7B-8BA7-8CCEA1499F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{688BFAD8-13A3-4C7B-8BA7-8CCEA1499F39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
