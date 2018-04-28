@@ -21,7 +21,7 @@ namespace FriendStorage.UI.Tests.ViewModel
 
             var friend = navigationViewModel.Friends.SingleOrDefault(f => f.Id == 1);
             Assert.NotNull(friend);
-            Assert.Equal("nAvz", friend.FirstName);
+            Assert.Equal("nAvz killa", friend.DisplayMember);
         }
 
         [Fact]

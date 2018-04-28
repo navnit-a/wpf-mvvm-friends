@@ -1,21 +1,21 @@
 ﻿using System.Collections.ObjectModel;
-using FriendStorage.DataAccess;
 using FriendStorage.Model;
+using FriendStorage.UI.Contracts;
 using FriendStorage.UI.DataProvider;
 
 namespace FriendStorage.UI.ViewModel
 {
-    public class NavigationViewModel : ViewModelBase
+    public class NavigationViewModel : ViewModelBase, INavigationViewModel
     {
         private readonly INavigationDataProvider _navigationDataProvider;
 
         public NavigationViewModel(INavigationDataProvider navigationDataProvider)
         {
             _navigationDataProvider = navigationDataProvider;
-            Friends = new ObservableCollection<Friend>();
+            Friends = new ObservableCollection<FriendLookupItem>();
         }
 
-        public ObservableCollection<Friend> Friends { get; }
+        public ObservableCollection<FriendLookupItem> Friends { get; }
 
         public void Load()
         {

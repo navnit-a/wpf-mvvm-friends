@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Mocks\NavigationDataProviderMock.cs" />
+    <Compile Include="ViewModel\MainViewModelTests.cs" />
     <Compile Include="ViewModel\NavigationViewTests.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,20 +1,15 @@
-﻿using System;
-using FriendStorage.DataAccess;
-using FriendStorage.UI.DataProvider;
+﻿using FriendStorage.UI.Contracts;
 
 namespace FriendStorage.UI.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
-        public MainViewModel()
+        public MainViewModel(INavigationViewModel navigationViewModel)
         {
-            NavigationViewModel = 
-                new NavigationViewModel(
-                new NavigationDataProvider(
-                    () => new FileDataService()));
+            NavigationViewModel = navigationViewModel;
         }
 
-        public NavigationViewModel NavigationViewModel { get; }
+        public INavigationViewModel NavigationViewModel { get; }
 
         public void Load()
         {
